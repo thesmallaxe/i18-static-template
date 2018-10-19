@@ -1,18 +1,13 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
+language: en
+handle: /about
+nav-order: 2
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+There's no need to use a CMS to build a multilingual website, Jekyll can handle that just fine.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+By making considered use of layouts, YAML frontmatter, and Liquid templating capabilities, it's possible to abstract content from presentation and keep your project tidy and maintainable.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Curios about how it all works? Check out source and README on [GitHub](https://github.com/mrzool/polyglot-jekyll).
