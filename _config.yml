@@ -9,9 +9,9 @@ description:
   it: Siti multilingue in Jekyll, senza plugin.
   ar: مجانية مواقع مجانية متعددة اللغات Jekyll متعدد اللغات
 footer:
-  en: An open-source project by [smallaxetech]
-  de: Ein open-source Projekt von [smallaxetech]
-  it: Un progetto open-source di [smallaxetech]
+  en: A project by [smallaxetech]
+  de: Ein Projekt von [smallaxetech]
+  it: Un progetto di [smallaxetech]
   ar: مشروع مفتوح المصدر من قبل [smallaxetech]
 exclude: ""
 permalink: pretty

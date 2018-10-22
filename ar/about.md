@@ -10,4 +10,4 @@ nav-order: 2
 
 من خلال الاستفادة من استخدام التخطيطات ، وميزة YAML الأمامية ، وقدرات تركيب السوائل ، من الممكن تجريد المحتوى من العرض والحفاظ على تنظيم مشروعك وصيانته.
 
-التحف حول كيفية عمل كل شيء؟ تحقق من المصدر و README على [GitHub] (https://github.com/mrzool/polyglot-jekyll).
+التحف حول كيفية عمل كل شيء؟ تحقق من المصدر و README على [GitHub](https://github.com/thesmallaxe/i18-static-template).
