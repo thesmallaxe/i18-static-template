@@ -1,0 +1,126 @@
+/**
+ * Header
+ */
+
+.header {
+  align-items: center;
+  background: $white;
+  display: flex;
+  padding: rem-calc(15 20);
+  position: absolute;
+  width: 100%;
+  z-index: $z-index-nav;
+
+  @include breakpoint($nav-bp) {
+    background: transparent;
+    padding: 0;
+  }
+
+  @include breakpoint(xlarge) {
+    padding-right: rem-calc(22);
+  }
+}
+
+.header__logo {
+  background: $white;
+  display: inline-block;
+  max-width: rem-calc(117);
+
+  @include breakpoint($nav-bp) {
+    max-width: none;
+    padding: rem-calc(20 30 20 $gutter-desktop);
+  }
+
+  @include breakpoint(xlarge) {
+    padding-left: rem-calc(40);
+  }
+}
+
+.header__logo__image {
+  display: block;
+  width: rem-calc(160);
+}
+
+.header__hamburger {
+  cursor: pointer;
+  height: rem-calc(26);
+  position: absolute;
+  right: rem-calc(20);
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  width: rem-calc(35);
+  z-index: $z-index-hamburger;
+
+  .nav-open & {
+    position: fixed;
+  }
+
+  @include breakpoint($nav-bp) {
+    display: none;
+  }
+
+  span {
+    background: $dark-brown;
+    border-radius: rem-calc(30);
+    display: block;
+    height: rem-calc(6);
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    width: 100%;
+
+    .nav-open & {
+      background: $white;
+    }
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: rem-calc(10);
+    }
+
+    &:nth-child(4) {
+      top: rem-calc(20);
+    }
+  }
+
+  .nav-open & {
+    span:nth-child(1) {
+      left: 50%;
+      top: rem-calc(10);
+      width: 0%;
+    }
+
+    span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    span:nth-child(4) {
+      left: 50%;
+      top: rem-calc(8);
+      width: 0%;
+    }
+  }
+}
+
+.header--static {
+  border-bottom: 1px solid $dark-tan;
+  position: relative;
+
+  .nav__link {
+    &,
+    &:hover,
+    &:focus {
+      color: $dark-brown;
+    }
+  }
+}

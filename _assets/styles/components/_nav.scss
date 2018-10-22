@@ -1,0 +1,106 @@
+/**
+ * Navigation
+ */
+
+.nav {
+  display: block;
+  font-size: rem-calc(15);
+  letter-spacing: 1px;
+  margin-left: auto;
+  padding-top: rem-calc(20);
+  text-transform: uppercase;
+
+  @include secondary-font;
+
+  @include breakpoint($nav-down-bp down) {
+    background: $green;
+    font-size: rem-calc(17);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow-y: auto;
+    padding-top: rem-calc(75);
+    position: fixed;
+    top: 0;
+    transition: opacity ease 0.5s, visibility 0.5s 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: $z-index-nav;
+
+    .nav-open & {
+      opacity: 1;
+      transition: opacity ease 0.5s;
+      visibility: visible;
+    }
+  }
+}
+
+.nav__list {
+  list-style: none;
+  position: relative;
+}
+
+.nav__list-item {
+  display: block;
+  margin: 0 0 rem-calc(18);
+
+  @include breakpoint($nav-bp) {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.nav__link {
+  color: $white;
+  display: block;
+  padding: 0;
+
+  @include breakpoint($nav-bp) {
+    padding: rem-calc(5 18);
+  }
+
+  &:hover,
+  &:focus {
+    color: $nav-hover-color;
+  }
+}
+
+@include breakpoint($nav-bp) {
+  .nav__line {
+    background: $nav-line-color;
+    display: block;
+    height: rem-calc(2);
+    left: rem-calc(30);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+    width: rem-calc(30);
+
+    .nav__list:hover & {
+      opacity: 1;
+    }
+
+    .nav__list-item:nth-child(2):hover ~ &,
+    .nav__list-item:nth-child(2):focus ~ & {
+      transform: translate3d(110px, 0, 0);
+    }
+
+    .nav__list-item:nth-child(3):hover ~ &,
+    .nav__list-item:nth-child(3):focus ~ & {
+      transform: translate3d(245px, 0, 0);
+    }
+
+    .nav__list-item:nth-child(4):hover ~ &,
+    .nav__list-item:nth-child(4):focus ~ & {
+      transform: translate3d(405px, 0, 0);
+    }
+
+    .nav__list-item:nth-child(5):hover ~ &,
+    .nav__list-item:nth-child(5):focus ~ & {
+      transform: translate3d(585px, 0, 0);
+    }
+  }
+}
