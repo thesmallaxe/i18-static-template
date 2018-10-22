@@ -18,3 +18,13 @@ permalink: pretty
 repository: thesmallaxe/i18-static-template
 baseurl: ""
 # baseurl: /polyglot-jekyll
+
+# Exclude files
+exclude: [
+  Gemfile.lock,
+  Gemfile,
+  gulpfile.babel.js,
+  node_modules,
+  package.json,
+  README.md
+]
