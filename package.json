@@ -1,0 +1,89 @@
+{
+  "name": "coffeechallenge",
+  "version": "1.0.0",
+  "description": "This is the basic Jekyll starter site, with Netlify CMS integrated.",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsd/sustainable-coffee-challenge.git"
+  },
+  "author": "Blue State Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsd/sustainable-coffee-challenge/issues"
+  },
+  "homepage": "https://github.com/bsd/sustainable-coffee-challenge#readme",
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ]
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "del": "^3.0.0",
+    "eslint": "^4.5.0",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-accessibility": "^3.0.1",
+    "gulp-append-prepend": "^1.0.4",
+    "gulp-babel": "^7.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-json-to-yaml": "0.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "run-sequence": "^2.1.0",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.4.3",
+    "through2": "^2.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "foundation-sites": "6.2.4",
+    "svg4everybody": "^2.1.9"
+  }
+}
