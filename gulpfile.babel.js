@@ -35,12 +35,6 @@ const fs = require('fs');
 const paths = require('./_assets/gulp_config/paths');
 const sync = browserSync.create();
 
-// GATHERCONTENT VARIABLES
-// ----------
-const gcAuth = 'tpotocnik@bluestatedigital.com:434b27b8-6c78-44a6-a287-e787bbcc19d6';
-const gcVersioning = 'Accept: application/vnd.gathercontent.v0.5+json';
-const gcProjectID = '131540';
-
 // -----------------------------------------------------------------------------
 //   1: Styles
 // -----------------------------------------------------------------------------
@@ -54,7 +48,7 @@ gulp.task('stylelint', () => {
   return gulp.src([
     `${paths.sassFiles}/**/*.s+(a|c)ss`,
     `${paths.sassFiles}/**/*.css`,
-    `!${paths.sassFiles}/vendor/**/*`
+    `!${paths.sassFiles}/vendor/**/*`,
   ])
   .pipe($.stylelint({
     reporters: [
@@ -343,15 +337,15 @@ gulp.task('clean:jekyll', (callback) => {
 
 // Simple callback stream used to synchronize stuff
 // Source: http://unobfuscated.blogspot.co.at/2014/01/executing-asynchronous-gulp-tasks-in.html
-function synchro(done) {
-  return through2.obj(function (data, enc, cb) {
-    cb();
-  },
-  function (cb) {
-    cb();
-    done();
-  });
-}
+// function synchro(done) {
+//   return through2.obj(function (data, enc, cb) {
+//     cb();
+//   },
+//   function (cb) {
+//     cb();
+//     done();
+//   });
+// }
 
 /**
  * Task: clean
@@ -359,7 +353,6 @@ function synchro(done) {
  * Runs all the clean commands.
  */
 gulp.task('clean', ['clean:jekyll',
-  'clean:gathercontent',
   'clean:images',
   'clean:scripts',
   'clean:styles',
@@ -375,7 +368,6 @@ gulp.task('build', (callback) => {
     'build:fonts',
     'imgresize',
     ['build:scripts', 'build:icons', 'build:images', 'build:styles'],
-    'build:gathercontent',
     'build:jekyll',
     callback);
 });
@@ -463,7 +455,7 @@ gulp.task('serve', () => {
 // Copy _site folder files into docs folder
 gulp.task('copySiteFolder', function() {
   gulp.src('_site/**')
-  .pipe(gulp.dest('docs/'));
+  .pipe(gulp.dest('docs'));
 });
 
 /**

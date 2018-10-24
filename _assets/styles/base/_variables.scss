@@ -2,73 +2,70 @@
  * Variables
  */
 
-// Colors
-$black: #000;
-$blue: #76a1cf;
-$blue-dark: #6590be;
-$blue-darker: #5780ac;
-$blue-darkest: #476f99;
-$brown: #5a5a5a;
-$dark-brown: #34281d;
-$gray: #8f8f8f;
-$mid-gray: #b8b8b8;
-$light-gray: #979797;
-$lightish-gray: #dedede;
-$lighter-gray: #eaeaea;
-$green: #55924e;
-$lime-green: #97b435;
-$orange: #f47b36;
-$orange-dark: #d96c2e;
-$orange-darker: #be5d26;
-$orange-darkest: #a14916;
-$red: #d2593a;
-$dark-red: #c00;
-$yellow: #d6d84f;
-$tan: #f6eee9;
-$mid-tan: #e0d4c6;
-$dark-tan: #a38e60;
-$white: #fff;
-$yellow: #d6d84f;
-
-$link-hover-color: $blue;
-$nav-line-color: $orange;
-$nav-hover-color: $white;
-$error-color: $dark-red;
+// FONT TYPES
+$font-thinnest: 100;
+$font-thin: 200;
+$font-normal: 300;
+$font-medium: 500;
+$font-bold: 700;
 
 // Paths
 $font-directory: "/assets/fonts";
 $image-directory: "/assets/img";
 
-// Grid
-$global-width: rem-calc(1200);
-$gutter-mobile: 15;
-$gutter-desktop: 15;
-$grid-column-gutter: (
-  small: rem-calc($gutter-mobile * 2),
-  medium: rem-calc($gutter-desktop * 2),
-);
-$nav-bp: rem-calc(970);
-$mobile-small-bp: rem-calc(480);
-$nav-down-bp: rem-calc(969);
-$three-col-bp: rem-calc(885);
-$profile-alt-bp: rem-calc(800);
-$signup-col-bp: rem-calc(800);
-$sector-blocks-bp: rem-calc(1180);
-$sector-blocks-bp-down: rem-calc(1179);
-$large-compass-bp: 80em;
-$map-bp: rem-calc(1000);
+// COLORS
+$color-navlink: #aaa7a1;
+$color-primary: #ff671b;
+$color-primary-darker: #205493;
+$color-primary-darkest: #112e51;
+$color-secondary: #d22a2f;
+$color-secondary-dark: #cd2026;
+$color-secondary-darkest: #981b1e;
+$color-secondary-light: #e59393;
+$color-secondary-lightest: #f9dede;
+$color-white: #fff;
+$color-base: #4e4e4e;
+$color-base-dark: #2b2b2b;
+$color-base-light: #f1efeb;
+$color-green-light: #afe8db;
+$color-green-dark: #4fcdb0;
+$color-green-darkest: #35a287;
+$color-black: #000;
+$color-gray: #7b7b7b;
+$color-light-gray: #aba6a4;
+$color-lighter-gray: #a8a7a3;
+$color-dark-gray: #141413;
+$color-red: #d22a2f;
+$color-green: #2ea388;
+$color-green-light: #b1e7db;
 
-$title-font-size-mobile: 47;
-$title-font-size: 50;
+// TRANSITIONS
+$transition-default: .25s ease-out;
+$cubic-transition: cubic-bezier(.51, .92, .24, 1.15);
+$cubic-transition-2: cubic-bezier(0, 0, .2, 1);
 
-$transition-default: 0.25s ease-out;
+// BREAKPOINTS
 
-// Footer
-$footer-signup-transition-function: ease;
-$footer-signup-transition-timing: 0.5s;
-$footer-signup-transition: $footer-signup-transition-timing $footer-signup-transition-function;
-$footer-bp: 815px;
+// Mobiles
+$xs: (media: 576px);
 
-// Z-Indexes
-$z-index-hamburger: 10;
-$z-index-nav: 9;
+// Small tablets (portrait view)
+$sm: (media: 768px);
+
+// Tablets and small desktops
+$md: (media: 992px);
+
+// Tablets and desktops
+$lg: (media: 1200px);
+
+// Large Desktops
+$xl: (media: 1400px);
+
+// CONTAINER SIZES
+$container-width: 1230px;
+
+// GRIDS
+$neat-grid: (columns: 12, gutter: 15px);
+$no-gutter: (gutter: 0);
+$columnar-gutter: (gutter: 120px);
+

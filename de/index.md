@@ -6,6 +6,10 @@ nav-order: 1
 see-on-github: Auf GitHub sehen
 ---
 
-Probiere es einfach aus. Hast du schon mal eine Webseite gesehen, die so schnell zwischen Sprachen wechselt? Eben, ich auch nicht.
-
-
+<!-- Section Hero  -->
+{% include partials/hero.liquid
+  background_image=site.data.section_landing.hero.image
+  video_webm=site.data.section_landing.hero.video_webm
+  video_mp4=site.data.section_landing.hero.video_mp4
+  background_image=false
+%}

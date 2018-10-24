@@ -4,10 +4,11 @@
  * Import libraries and styles.
  */
 
-// Foundation Settings and Utilities
+// Bourbon Settings and Utilities
 // ======================
-@import "foundation-sites/scss/util/util";
-@import "foundation-sites/scss/global";
+// Neat Bourbon
+@import "../../node_modules/bourbon/core/bourbon";
+@import "../../node_modules/bourbon-neat/core/neat";
 
 // General Settings
 // =====================
@@ -15,32 +16,12 @@
 @import "base/font-families";
 @import "base/fonts";
 
-// Foundation Components
-// ======================
-@import "foundation-sites/scss/grid/grid";
-@import "foundation-sites/scss/typography/typography";
-@import "foundation-sites/scss/forms/forms";
-@import "foundation-sites/scss/components/visibility";
-@import "foundation-sites/scss/components/button";
-
-// Initialize Foundation components
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-visibility-classes;
-@include foundation-forms;
-@include foundation-button;
-
 // Other Vendor Styles
 // ======================
 
 // Site Styles
 // ======================
 @import "base/base";
-@import "base/buttons";
-@import "base/forms";
-@import "components/footer";
 @import "components/header";
-@import "components/hero";
 @import "components/nav";
-@import "base/tooltips";
+@import "components/hero";

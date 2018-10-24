@@ -1,5 +1,5 @@
 {
-  "name": "coffeechallenge",
+  "name": "Jekyll",
   "version": "1.0.0",
   "description": "This is the basic Jekyll starter site, with Netlify CMS integrated.",
   "main": "gulpfile.babel.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsd/sustainable-coffee-challenge.git"
+    "url": "git+"
   },
-  "author": "Blue State Digital",
+  "author": "Small Axe Tech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bsd/sustainable-coffee-challenge/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/bsd/sustainable-coffee-challenge#readme",
+  "homepage": "",
   "browserify-shim": {
     "jquery": "global:jQuery"
   },
@@ -44,6 +44,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "babelify": "^7.3.0",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.0",
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
     "browserify-shim": "^3.8.14",
@@ -74,7 +76,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "imagemin-jpeg-recompress": "^5.1.0",
-    "run-sequence": "^2.1.0",
+    "run-sequence": "^2.2.1",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
     "stylelint-order": "^0.4.3",
@@ -83,7 +85,6 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "foundation-sites": "6.2.4",
     "svg4everybody": "^2.1.9"
   }
 }

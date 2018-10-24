@@ -3,45 +3,27 @@
  */
 
 .hero {
+  align-items: center;
   background: no-repeat;
   background-size: cover;
-  color: $white;
+  color: $color-white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
   overflow: hidden;
-  padding: rem-calc(155 0 140);
+  padding: 155px 0 140px;
   position: relative;
   text-align: center;
 
-  &--large {
-    padding: rem-calc(155 0 100);
-  }
-
-  @include breakpoint(medium) {
-    padding: rem-calc(180 0 90);
-
-    &--large {
-      padding: rem-calc(200 0);
-    }
-  }
-
-  @include breakpoint($nav-bp) {
-    padding: rem-calc(200 0 90);
-
-    &--large {
-      padding: rem-calc(350 0 240);
-    }
-  }
-
-  .button {
-    margin: rem-calc(25) auto 0;
-
-    + .button {
-      margin-top: rem-calc(20);
-    }
-
-    @include breakpoint(medium) {
-      margin-right: 0;
-      margin-top: 0;
-    }
+  &:before {
+    background: rgba($color-black, .35);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
   }
 }
 
@@ -57,42 +39,31 @@
   z-index: -100;
 }
 
+.hero__caption {
+  max-width: 800px;
+  position: relative;
+}
+
 .hero__title {
-  font-size: rem-calc(50);
-  line-height: 0.8;
-  margin-bottom: rem-calc(23);
+  font-size: 50px;
+  line-height: 1;
   text-transform: uppercase;
 
-  @include tertiary-font;
+  @include secondary-font;
 
-  @include breakpoint(small down) {
-    .hero--large & {
-      font-size: rem-calc(60);
-    }
-  }
-
-  @include breakpoint(medium) {
-    font-size: rem-calc(100);
-    margin-bottom: rem-calc(40);
-  }
-
-  @include breakpoint(large) {
-    font-size: rem-calc(115);
-  }
-
-  @include breakpoint(76em) {
-    font-size: rem-calc(140);
+  @include grid-media($md) {
+    font-size: 100px;
   }
 }
 
 .hero__subtitle {
-  font-size: rem-calc(16);
+  font-size: 16px;
   line-height: 1.8;
 
   @include primary-font-semibold;
 
-  @include breakpoint(medium) {
-    font-size: rem-calc(19);
+  @include grid-media($md) {
+    font-size: 19px;
     line-height: 1.6;
     text-align: left;
   }
@@ -112,11 +83,11 @@
 }
 
 .hero__next-container {
-  bottom: rem-calc(60);
+  bottom: 60px;
   position: absolute;
   width: 100%;
 
-  @include breakpoint(small only) {
+  @include grid-media($sm) {
     display: none;
   }
 }
@@ -126,9 +97,9 @@
 }
 
 .hero__next__text {
-  color: $white;
-  font-size: rem-calc(14);
-  margin-bottom: rem-calc(15);
+  color: $color-white;
+  font-size: 14px;
+  margin-bottom: 15px;
 
   @include secondary-font;
 }

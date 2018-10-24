@@ -4,14 +4,24 @@
 
 body {
   @include primary-font;
+
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
+  color: $color-black;
+  text-decoration: none;
   transition: all $transition-default;
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    color: $color-navlink;
   }
 }
 
@@ -20,6 +30,11 @@ svg {
   max-width: 100%;
 }
 
-.divider {
-  border-top: 1px solid $dark-tan;
+.container {
+  @include grid-container;
+
+  margin: 0 auto;
+  max-width: $container-width;
+  padding: 0 15px;
+  width: 100%;
 }

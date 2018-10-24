@@ -1,13 +1,13 @@
 name: 
-  en: i18n static template
-  de: i18n statische sjabloon
-  it: i18n modello statico
-  ar: i18n قالب ثابت 
+  #en: i18n static template
+  #de: i18n statische sjabloon
+  #it: i18n modello statico
+  #ar: i18n قالب ثابت 
 description: 
-  en: Plugin-free multilanguage Jekyll websites
-  de: Plugin-freie vielsprachige Jekyll Webseiten
-  it: Siti multilingue in Jekyll, senza plugin.
-  ar: مجانية مواقع مجانية متعددة اللغات Jekyll متعدد اللغات
+  #en: Plugin-free multilanguage Jekyll websites
+  #de: Plugin-freie vielsprachige Jekyll Webseiten
+  #it: Siti multilingue in Jekyll, senza plugin.
+  #ar: مجانية مواقع مجانية متعددة اللغات Jekyll متعدد اللغات
 footer:
   en: A project by [smallaxetech]
   de: Ein Projekt von [smallaxetech]
@@ -28,3 +28,6 @@ exclude: [
   package.json,
   README.md
 ]
+
+# Build settings
+markdown: kramdown
