@@ -1,0 +1,7 @@
+.content__full-width {
+  @include grid-column(12, $no-gutter);
+}
+
+.content--center {
+  text-align: center;
+}

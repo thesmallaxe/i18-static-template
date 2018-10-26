@@ -5,13 +5,13 @@
  */
 
 // Bourbon Settings and Utilities
-// ======================
+// =====================
 // Neat Bourbon
 @import "../../node_modules/bourbon/core/bourbon";
 @import "../../node_modules/bourbon-neat/core/neat";
 
 // General Settings
-// =====================
+// ======================
 @import "base/variables";
 @import "base/font-families";
 @import "base/fonts";
@@ -22,6 +22,9 @@
 // Site Styles
 // ======================
 @import "base/base";
+@import "components/button";
+@import "layouts/content";
 @import "components/header";
-@import "components/nav";
 @import "components/hero";
+@import "components/nav";
+@import "components/section";

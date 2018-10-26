@@ -1,0 +1,44 @@
+# Content
+analysis_content:
+  image: '/assets/img/analysis-img.jpg'
+  analysis_title: Regional analysis
+  analysis_text: |-
+    <p>
+      Why doesn’t rapid structural change always go hand in hand with fast poverty reduction?
+    </p>
+    <p>
+      The Spanish and Portuguese-speaking countries of Latin America and the Caribbean underwent a vast rural transformation in the second half of the 20th Century. By the year 2000, some 75 per cent of people lived in towns and cities, and agriculture’s share of GDP had fallen by 40 per cent since 1980 to little more than five per cent of the region’s economy.
+    </p>
+    <p>
+      Rural economies have diversified, and rural roads and communications technologies have blurred the cultural distance between rural and urban youth. Rural-urban territories have sprung up, centred on small towns and villages, creating new types of rural societies in which agriculture is still important, but no longer dominates the economic landscape. Yet there are still an estimated 15 million family farms. 
+    </p>
+  analysis_download_button_text: Make a commitment
+  analysis_download_button_url: '#'
+  fr:
+    analysis_title: Analyse régionale
+    analysis_text: |-
+      <p>
+        Pourquoi un changement structurel rapide ne va-t-il pas toujours de pair avec une réduction rapide de la pauvreté?
+      </p>
+      <p>
+        Les pays hispanophones et lusophones d'Amérique latine et des Caraïbes ont subi une vaste transformation rurale dans la seconde moitié du XXe siècle. En 2000, environ 75% de la population vivait dans des villes et les villes et le PIB de l’agriculture avait chuté de 40% depuis 1980 pour atteindre à peine plus de 5% de l’économie de la région.
+      </p>
+      <p>
+        Les économies rurales se sont diversifiées et les routes rurales et les technologies de communication ont estompé la distance culturelle entre les jeunes des zones rurales et urbaines. Des territoires ruraux-urbains ont émergé, centrés sur les petites villes et villages, créant de nouveaux types de sociétés rurales dans lesquelles l'agriculture est toujours importante mais ne domine plus le paysage économique. Pourtant, on estime à 15 millions le nombre d'exploitations familiales.
+      </p>
+    analysis_download_button_text: S'engager
+    analysis_download_button_url: '#'
+  ar:
+    analysis_title: التحليل الإقليمي
+    analysis_text: |-
+      <p>
+        لماذا لا يسير التغيير الهيكلي السريع جنباً إلى جنب مع الحد من الفقر بسرعة؟
+      </p>
+      <p>
+        خضعت البلدان الناطقة بالإسبانية واللاتينية في أمريكا اللاتينية ومنطقة الكاريبي لعملية تحول ريفية شاسعة في النصف الثاني من القرن العشرين. وبحلول عام 2000 ، كان نحو 75 في المائة من الناس يعيشون في البلدات والمدن ، وانخفضت حصة الزراعة من الناتج المحلي الإجمالي بنسبة 40 في المائة منذ عام 1980 إلى أكثر بقليل من خمسة في المائة من اقتصاد المنطقة.
+      </p>
+      <p>
+        وقد تنوعت الاقتصادات الريفية ، وأدت الطرق الريفية وتكنولوجيا الاتصالات إلى عدم وضوح المسافة الثقافية بين شباب الريف والحضر. وقد ظهرت الأراضي الريفية والحضرية ، وتركزت على البلدات والقرى الصغيرة ، وخلقت أنماطًا جديدة من المجتمعات الريفية التي لا تزال الزراعة مهمة فيها ، ولكنها لم تعد تهيمن على المشهد الاقتصادي. ومع ذلك ، لا تزال هناك ما يقدر بـ 15 مليون مزرعة عائلية.
+      </p>
+    analysis_download_button_text: قدم التزاما
+    analysis_download_button_url: '#'

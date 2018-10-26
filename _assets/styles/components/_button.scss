@@ -1,0 +1,23 @@
+/**
+ * Button
+ */
+
+.button {
+  background: $color-base-light;
+  border-radius: 25px;
+  color: $color-navlink;
+  display: inline-block;
+  text-transform: uppercase;
+
+  @include margin(30px null);
+  @include padding(15px 30px);
+
+  &:hover {
+    background: $color-navlink;
+    color: $color-base-light;
+  }
+
+  &--large {
+    @include padding(15px 50px);
+  }
+}

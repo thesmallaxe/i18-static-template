@@ -5,27 +5,50 @@ hero:
   video_webm: '/assets/video/home-hero.webm'
   video_mp4: '/assets/video/home-hero.mp4'
 
-hero_title: Are you committed?
-hero_text: |-
-  <p>
-    It takes a serious commitment to make coffee the world's first fully sustainable agricultural product.
-  </p>
-  <p>
-      What's yours?<br>
-  </p>
-hero_button_1_text: Make a Commitment
-hero_button_1_url: /start-a-commitment
-hero_button_2_text: Work Together
-hero_button_2_url: /action-networks
-teaser_text: |-
-  <p>
-      Need inspiration?
-  </p>
-commitment_1_company_name: S&D
-commitment_1_text: >-
-  S&D supports the production of 150 million lbs. of sustainable coffee via its
-  sustainable sourcing platform RAIZ, while impacting the livelihoods of 10,000
-  farming families.
-commitment_1_url: /partners/sandd/
-commitment_1_logo: >-
-  https://gathercontent-production-uploads.s3.amazonaws.com/1502477747_4602_791f3d3fb6b7f60ab73f65282d221033
+# Content
+hero_content:
+  en:
+    hero_title: Are you committed?
+    hero_text: |-
+      <p>
+        It takes a serious commitment to make coffee the world's first fully sustainable agricultural product.
+      </p>
+      <p>
+          What's yours?<br>
+      </p>
+    hero_button_1_text: Make a Commitment
+    hero_button_1_url: /start-a-commitment
+    hero_button_2_text: Work Together
+    hero_button_2_url: /action-networks
+    teaser_text: |-
+      <p>
+          Need inspiration?
+      </p>
+    commitment_1_company_name: S&D
+    commitment_1_text: >-
+      S&D supports the production of 150 million lbs. of sustainable coffee via its
+      sustainable sourcing platform RAIZ, while impacting the livelihoods of 10,000
+      farming families.
+    commitment_1_url: /partners/sandd/
+    commitment_1_logo: >-
+      https://gathercontent-production-uploads.s3.amazonaws.com/1502477747_4602_791f3d3fb6b7f60ab73f65282d221033
+  de:
+    hero_title: Ben je toegewijd?
+  fr:
+    hero_title: Êtes-vous engagé?
+    hero_text: |-
+      <p>
+        It takes a serious commitment to make coffee the world's first fully sustainable agricultural product.
+      </p>
+      <p>
+          What's yours?<br>
+      </p>
+  ar:
+    hero_title: هل ارتكبت؟
+    hero_text: |-
+      <p>
+        It takes a serious commitment to make coffee the world's first fully sustainable agricultural product.
+      </p>
+      <p>
+          What's yours?<br>
+      </p>

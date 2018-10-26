@@ -64,8 +64,13 @@ $xl: (media: 1400px);
 // CONTAINER SIZES
 $container-width: 1230px;
 
-// GRIDS
+// Bourbon Neat Settings
+
+//GRIDS
 $neat-grid: (columns: 12, gutter: 15px);
 $no-gutter: (gutter: 0);
 $columnar-gutter: (gutter: 120px);
+
+// Bourbon Settings
+$base-font-size: 1em;
 

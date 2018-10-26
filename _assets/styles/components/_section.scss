@@ -1,0 +1,7 @@
+section {
+  @include padding(2.5em 1em);
+
+  @include grid-media($sm) {
+    @include padding(null 6.5em);
+  }
+}

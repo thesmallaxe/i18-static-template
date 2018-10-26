@@ -1,0 +1,55 @@
+{% assign sectionAnalysis = site.data.section_analysis %}
+
+<section id="section4" class="about content__full-width content--center">
+  <div class="container">
+    <!-- Title -->
+    {% if sectionAnalysis.analysis_content.analysis_title != '' %}
+      <h1 class="hero__title">
+        {% if page.language == "en" %}
+          {{ sectionAnalysis.analysis_content.analysis_title }}
+        {% endif %}
+
+        {% if page.language == "fr" %}
+          {{ sectionAnalysis.analysis_content.fr.analysis_title }}
+        {% endif %}
+
+        {% if page.language == "ar" %}
+          {{ sectionAnalysis.analysis_content.ar.analysis_title }}
+        {% endif %}
+      </h1>
+    {% endif %}
+
+    <!-- Image -->
+    {% if sectionAnalysis.analysis_content.image %}
+      <img src="{{sectionAnalysis.analysis_content.image}}" alt="Regional Analysis Picture">
+    {% endif %}
+
+    <!-- Content -->
+    {% if sectionAnalysis.analysis_content.analysis_text != '' %}
+      {% if page.language == "en" %}
+        {{ sectionAnalysis.analysis_content.analysis_text }}
+      {% endif %}
+
+      {% if page.language == "fr" %}
+        {{ sectionAnalysis.analysis_content.fr.analysis_text }}
+      {% endif %}
+
+      {% if page.language == "ar" %}
+        {{ sectionAnalysis.analysis_content.ar.analysis_text }}
+      {% endif %}
+    {% endif %}
+
+    <!-- Button  -->
+    {% if sectionAnalysis.analysis_content.analysis_download_button_text and sectionAnalysis.analysis_content.analysis_download_button_text != '' and page.language == "en" %}
+      <a href="{{ sectionAnalysis.analysis_content.analysis_download_button_url }}" class="button">{{ sectionAnalysis.analysis_content.analysis_download_button_text }}</a>
+    {% endif %}
+
+    {% if sectionAnalysis.analysis_content.fr.analysis_download_button_text and sectionAnalysis.analysis_content.fr.analysis_download_button_text != '' and page.language == "fr" %}
+      <a href="{{ sectionAnalysis.analysis_content.fr.analysis_download_button_url }}" class="button">{{ sectionAnalysis.analysis_content.fr.analysis_download_button_text }}</a>
+    {% endif %}
+
+    {% if sectionAnalysis.analysis_content.ar.analysis_download_button_text and sectionAnalysis.analysis_content.ar.analysis_download_button_text != '' and page.language == "ar" %}
+      <a href="{{ sectionAnalysis.analysis_content.ar.analysis_download_button_url }}" class="button">{{ sectionAnalysis.analysis_content.ar.analysis_download_button_text }}</a>
+    {% endif %}
+  </div>
+</section>

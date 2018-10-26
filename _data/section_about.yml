@@ -1,0 +1,43 @@
+# Content
+about_content:
+  about_title: Overview
+  about_text: |-
+    <p>
+      The world is changing rapidly, across urban and rural areas. Growing demand for food – driven by population increase and rising incomes – is creating opportunities and challenges for people working in rural areas, including in smallholder agriculture and in the non-farm economy.
+    </p>
+    <p>
+      Rising agricultural productivity, more jobs off the farm and migration to cities are reshaping rural life – but so too are adverse factors such as climate change, environmental degradation and other risks.
+    </p>
+    <p>
+      Small farms continue to provide livelihoods for up to 2.5 billion people and account for up to 80 per cent of food produced in Asia and sub-Saharan Africa. In a fast-changing world, rural areas must transform - and rapidly - in order to be sustainably included in growing economies and to contribute to overall prosperity. 
+    </p>
+  about_download_button_text: Make a commitment
+  about_download_button_url: '#'
+  fr:
+    about_title: vue d'ensemble
+    about_text: |-
+      <p>
+        Le monde change rapidement, dans les zones urbaines et rurales. La demande croissante de produits alimentaires - entraînée par la croissance démographique et la hausse des revenus - crée des opportunités et des défis pour les personnes travaillant dans les zones rurales, y compris dans les petites exploitations agricoles et dans l'économie non agricole.
+      </p>
+      <p>
+        L'augmentation de la productivité agricole, la multiplication des emplois non agricoles et la migration vers les villes sont en train de remodeler la vie rurale - mais aussi des facteurs néfastes tels que le changement climatique, la dégradation de l'environnement et d'autres risques.
+      </p>
+      <p>
+        Les petites exploitations continuent de fournir des moyens de subsistance à près de 2,5 milliards de personnes et représentent jusqu'à 80% des aliments produits en Asie et en Afrique subsaharienne. Dans un monde en rapide mutation, les zones rurales doivent se transformer - et rapidement - pour être intégrées de manière durable dans les économies en croissance et contribuer à la prospérité globale.
+      </p>
+    about_download_button_text: S'engager
+    about_download_button_url: '#'
+  ar:
+    about_title: نظرة عامة
+    about_text: |-
+      <p>
+        العالم يتغير بسرعة ، عبر المناطق الحضرية والريفية. يؤدي تزايد الطلب على الغذاء - مدفوعاً بزيادة السكان وارتفاع الدخول - إلى خلق فرص وتحديات أمام العاملين في المناطق الريفية ، بما في ذلك الزراعة في الحيازات الصغيرة والاقتصاد غير الزراعي.
+      </p>
+      <p>
+        إن زيادة الإنتاجية الزراعية وزيادة فرص العمل خارج المزرعة والهجرة إلى المدن يعيدان تشكيل الحياة الريفية - ولكن هناك أيضا عوامل سلبية مثل تغير المناخ وتدهور البيئة ومخاطر أخرى.
+      </p>
+      <p>
+        تواصل المزارع الصغيرة توفير سبل العيش لما يصل إلى 2.5 مليار شخص وتمثل ما يصل إلى 80 في المائة من الأغذية المنتجة في آسيا وأفريقيا جنوب الصحراء الكبرى. في عالم سريع التغير ، يجب أن تتحول المناطق الريفية - وبسرعة - من أجل إدراجه على نحو مستدام في الاقتصادات النامية والمساهمة في الرخاء العام.
+      </p>
+    about_download_button_text: قدم التزاما
+    about_download_button_url: '#'

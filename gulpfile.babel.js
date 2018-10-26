@@ -454,6 +454,7 @@ gulp.task('serve', () => {
 
 // Copy _site folder files into docs folder
 gulp.task('copySiteFolder', function() {
+  del(['docs'])
   gulp.src('_site/**')
   .pipe(gulp.dest('docs'));
 });

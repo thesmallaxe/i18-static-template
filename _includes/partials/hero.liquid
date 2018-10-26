@@ -1,6 +1,6 @@
-{% assign page = site.data.section_landing %}
+{% assign sectionHero = site.data.section_landing %}
 
-<section class="hero"{% if include.background_image %} style="background-image:url({{ include.background_image }});"{% endif %}>
+<section id="section1" class="hero"{% if include.background_image %} style="background-image:url({{ include.background_image }});"{% endif %}>
   {% if include.video_webm or include.video_mp4 %}
     <video class="hero__video"{% if include.background_image %} poster="{{ include.background_image }}"{% endif %}
       playsinline autoplay muted loop>
@@ -13,11 +13,25 @@
     </video>
   {% endif %}
 
-  {% if page.hero_title != '' %}
+  {% if sectionHero.hero_title != '' %}
     <div class="hero__caption">
       <h1 class="hero__title">
-        {{ page.hero_title }}
-      </h1>
+        {% if page.language == "en" %}
+          {{ sectionHero.hero_content.en.hero_title }}
+        {% endif %}
+
+        {% if page.language == "de" %}
+          {{ sectionHero.hero_content.de.hero_title }}
+        {% endif %}
+
+        {% if page.language == "fr" %}
+          {{ sectionHero.hero_content.fr.hero_title }}
+        {% endif %}
+
+        {% if page.language == "ar" %}
+          {{ sectionHero.hero_content.ar.hero_title }}
+        {% endif %}
+      </h1>      
     </div>
   {% endif %}
 </section>

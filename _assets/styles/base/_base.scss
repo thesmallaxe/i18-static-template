@@ -5,7 +5,6 @@
 body {
   @include primary-font;
 
-  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -25,9 +24,19 @@ a {
   }
 }
 
+img,
+svg {
+  max-width: 100%;
+}
+
 svg {
   max-height: 100%;
-  max-width: 100%;
+}
+
+hr {
+  border: 1px solid $color-navlink;
+
+  @include margin(2em null 0);
 }
 
 .container {

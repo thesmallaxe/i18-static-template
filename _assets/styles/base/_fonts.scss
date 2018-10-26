@@ -32,7 +32,33 @@
   font-weight: 700;
 }
 
-@mixin tertiary-font() {
-  font-family: 'Handelson', sans-serif;
-  font-weight: 400;
+body {
+  font-size: $base-font-size;
+  line-height: modular-scale(1, $base-font-size, $golden);
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: modular-scale(1.5, $base-font-size, $golden);
+  line-height: modular-scale(1, $base-font-size, $minor-second);
+
+  @include margin(0 null modular-scale(1, .5em));
+
+  @include grid-media($xs) {
+    font-size: modular-scale(2.5, $base-font-size, $golden);
+  }
+
+  @include grid-media($sm) {
+    font-size: modular-scale(4, $base-font-size, $golden);
+
+    @include margin(0 null modular-scale(1, .35em));
+  }
+}
+
+h2 {
+  font-size: modular-scale(2.5, $base-font-size, $golden);
+
+  @include grid-media($md) {
+    font-size: modular-scale(3.5, $base-font-size, $golden);
+  }
 }

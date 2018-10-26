@@ -11,9 +11,10 @@
   height: 100vh;
   justify-content: center;
   overflow: hidden;
-  padding: 155px 0 140px;
   position: relative;
   text-align: center;
+
+  @include padding(155px 0 140px);
 
   &:before {
     background: rgba($color-black, .35);
@@ -45,14 +46,14 @@
 }
 
 .hero__title {
-  font-size: 50px;
-  line-height: 1;
+  // font-size: 50px;
+  // line-height: 1;
   text-transform: uppercase;
 
   @include secondary-font;
 
   @include grid-media($md) {
-    font-size: 100px;
+    // font-size: modular-scale(9);
   }
 }
 
