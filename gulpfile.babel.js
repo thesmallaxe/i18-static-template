@@ -78,7 +78,8 @@ gulp.task('build:styles', ['stylelint'], () => {
 
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-    `${paths.sassFiles}/main.scss`
+    `${paths.sassFiles}/main.scss`,
+    `${paths.sassFiles}/main-rtl.scss`
   ])
     .pipe($.sass({includePaths: ['node_modules']}))
     .on('error', $.notify.onError())
@@ -89,6 +90,7 @@ gulp.task('build:styles', ['stylelint'], () => {
     .pipe(gulp.dest(paths.siteCssFiles))
     .pipe(sync.stream({match: '**/*.css'}));
 });
+
 
 /**
  * Task: clean:styles

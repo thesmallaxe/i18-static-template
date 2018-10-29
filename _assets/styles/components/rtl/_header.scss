@@ -1,0 +1,58 @@
+/* -----------------
+Headers
+----------------- */
+
+/****************** HEADER *******************/
+.header {
+  right: 0;
+}
+
+/*********** HEADER TOP SECTION ************/
+.header__top-wrapper {
+  float: left;
+}
+
+/************ HEADER MAIN LOGO ************/
+.header__logo {
+  float: right;
+}
+
+/*********** HEADER TOGGLE NAV ************/
+.header__nav-toggle {
+  float: left;
+}
+
+/*********** HEADER MAIN NAVIGATION ************/
+// ORDERED LIST
+ol {
+  li {
+    &:before {
+      text-align: left;
+    }
+  }
+}
+
+nav.header__main-nav {
+  float: right;
+
+  li {
+    &:before {
+      @include padding(null 0 25px 25px);
+
+      @include grid-media($md) {
+        @include padding(null 0 15px 25px);
+      }
+    }
+
+    a {
+      @include grid-media($md) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+/*********** HEADER FLOATING LOGO ************/
+.floating-logo {
+  right: 2rem;
+}

@@ -16,7 +16,7 @@ footer:
 exclude: ""
 permalink: pretty
 repository: thesmallaxe/i18-static-template
-baseurl: ""
+baseurl: "/i18-static-template"
 # baseurl: /polyglot-jekyll
 
 # Exclude files

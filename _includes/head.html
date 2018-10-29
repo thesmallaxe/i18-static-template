@@ -10,4 +10,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="{{base}}/assets/styles/main.css">
+
+  {% if page.language == "ar" %}
+    <link rel="stylesheet" href="{{base}}/assets/styles/main-rtl.css">
+  {% endif %}
 </head>

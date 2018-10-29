@@ -26,7 +26,7 @@ function init() {
   const $ = jquery;
 
   // Section Scroll
-  const $link = $('a[href*=#]');
+  const $link = $('.js-nav-collapse a[href*=#]');
   $link.bind('click', function(e) {
     e.preventDefault(); // prevent hard jump, the default behavior
 
@@ -61,6 +61,24 @@ function init() {
     });
   }).scroll();
   // End Section Scroll
+
+  // Hamburger Menu
+  const headertopWrapper = $('.header__top-wrapper');
+  const toggleButton = $('.js-nav-toggle');
+  const viewport = $(window).width();
+
+  toggleButton.click(function(e) {
+    e.preventDefault();
+    headertopWrapper.toggleClass('active');
+
+    if(headertopWrapper.hasClass('active') && viewport < 992) {
+      $(".js-nav-collapse").slideDown();
+    } else if(viewport < 992) {
+      $(".js-nav-collapse").slideUp();
+      $(".js-share-collapse").slideUp();
+    }
+  });
+
 }
 
 /**

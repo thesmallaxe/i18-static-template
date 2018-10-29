@@ -27,7 +27,7 @@ function init(){
 var $=_jquery2.default;
 
 // Section Scroll
-var $link=$('a[href*=#]');
+var $link=$('.js-nav-collapse a[href*=#]');
 $link.bind('click',function(e){
 e.preventDefault();// prevent hard jump, the default behavior
 
@@ -62,6 +62,24 @@ $('.header__main-nav ol > li a').eq(i).addClass('active');
 });
 }).scroll();
 // End Section Scroll
+
+// Hamburger Menu
+var headertopWrapper=$('.header__top-wrapper');
+var toggleButton=$('.js-nav-toggle');
+var viewport=$(window).width();
+
+toggleButton.click(function(e){
+e.preventDefault();
+headertopWrapper.toggleClass('active');
+
+if(headertopWrapper.hasClass('active')&&viewport<992){
+$(".js-nav-collapse").slideDown();
+}else if(viewport<992){
+$(".js-nav-collapse").slideUp();
+$(".js-share-collapse").slideUp();
+}
+});
+
 }
 
 /**
