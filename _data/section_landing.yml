@@ -1,9 +1,9 @@
 # Hero Section
 
 hero:
-  image: '/assets/img/home-hero.jpg'
-  video_webm: '/assets/video/home-hero.webm'
-  video_mp4: '/assets/video/home-hero.mp4'
+  image: '{{ site.baseurl }}/assets/img/home-hero.jpg'
+  video_webm: '{{ site.baseurl }}/assets/video/home-hero.webm'
+  video_mp4: '{{ site.baseurl }}/assets/video/home-hero.mp4'
 
 # Content
 hero_content:
@@ -17,9 +17,9 @@ hero_content:
           What's yours?<br>
       </p>
     hero_button_1_text: Make a Commitment
-    hero_button_1_url: /start-a-commitment
+    hero_button_1_url: "#"
     hero_button_2_text: Work Together
-    hero_button_2_url: /action-networks
+    hero_button_2_url: "#"
     teaser_text: |-
       <p>
           Need inspiration?

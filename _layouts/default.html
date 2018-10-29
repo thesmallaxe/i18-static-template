@@ -40,15 +40,6 @@
         </nav>
       </div>
     </header>
-
-    <!-- <nav>
-      {% assign pages = site.pages | sort: "nav-order"  %}
-      {% for p in pages %}
-        {% if p.language == page.language %} 
-          <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav> -->
     
     <nav class="language-switcher">
       {% if page.name contains "index" %}
@@ -62,22 +53,9 @@
       {% endif %}
     </nav>
 
-    <!-- <header>
-      <div class="container">
-        <h1>{{ site.name[page.language] }}</h1>
-        <p>{{ site.description[page.language] }}</p>
-      </div>
-    </header> -->
-
     <main>
       {{ content }}
     </main>
-
-    <!-- {% if page.name contains "index" %}
-      <section>
-        <a class="btn btn--gray" href="https://github.com/thesmallaxe/i18-static-template">{{ page.see-on-github }}</a>
-      </section>
-    {% endif %} -->
 
     {% include footer.html %}
 
@@ -90,6 +68,6 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-    <script src="/assets/js/source.dev.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/source.dev.js"></script>
   </body>
 </html>
