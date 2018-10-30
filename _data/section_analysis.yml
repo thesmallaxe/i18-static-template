@@ -1,6 +1,6 @@
 # Content
 analysis_content:
-  image: '/assets/img/analysis-img.jpg'
+  image: /assets/img/analysis-img.jpg
   analysis_title: Regional analysis
   analysis_text: |-
     <p>
