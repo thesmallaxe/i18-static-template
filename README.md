@@ -197,7 +197,3 @@ The approach should be solid enough and easily extensible to more complex websit
 - When you feel a bit more comfortable, this [cheat sheet](http://jekyll.tips/jekyll-cheat-sheet/) put together by [CloudCannon](http://cloudcannon.com/) is the go-to reference for all things Jekyll.
 - YAML is a flexible and powerful syntax to structure your data. Here's the [best overview](https://learnxinyminutes.com/docs/yaml/) available.
 - To go in-depth into the Liquid templating engine, check out Shopify's [official reference](https://help.shopify.com/themes/liquid) or these [docs](https://shopify.github.io/liquid/).
-
-
-## License
-[MIT](LICENSE)
