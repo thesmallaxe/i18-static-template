@@ -370,7 +370,7 @@ gulp.task('build', (callback) => {
     'build:fonts',
     'imgresize',
     ['build:scripts', 'build:icons', 'build:images', 'build:styles'],
-    'build:jekyll',
+    'build:jekyll', 'copySiteFolder',
     callback);
 });
 
