@@ -1,16 +1,15 @@
-# Polyglot Jekyll
+# i18n Jekyll Template
 
-> "Make it small. Make it dead simple."  &mdash;Adam Morse
+i18n Jekyll serves both as starting point for building a multilanguage website in vanilla Jekyll, and as instructional demo for my approach.
 
-Polyglot Jekyll serves both as starting point for building a multilanguage website in vanilla Jekyll, and as instructional demo for my approach.
-
-The boilerplate code is intentionally bare-bone, just the few files necessary for Jekyll to build the website and minimal CSS for the [demo](http://mrzool.cc/polyglot-jekyll). There's no build dependency except for Jekyll, no SASS compiling, no browser-sync, no `gulpfile.js`, no `package.json`.
-
-Just clone the repo and run `jekyll build` to build locally.
+This template is using npm and gulp.js to compile sass, js, jekyll build to make the pcompile process faster than using ruby. [demo](https://thesmallaxe.github.io/i18-static-template/).
 
 ## The approach
 
-The underlying principle is a well-known, universally applicable best practice: separation of content from presentation. Jekyll allows to extract a layout into separated files that support basic logic through the Liquid templating engine.
+1. Install [node.js](https://nodejs.org/en/download/)
+2. Then through the CMD or Terminal navigate to the root folder of the project
+3. Then type sudo npm install in mac and npm install in windows and then press enter. It will install all the dependencies needed.
+4. After that run gulp watch to run the site.
 
 With Jekyll, the file system structure is the website structure. We deal with multilanguage content by mirroring our site's structure in language-dedicated directories. Our default language will be at the root level, and every other language we want to support will have its own directory. Here's how a basic structure might look:
 
@@ -19,16 +18,10 @@ With Jekyll, the file system structure is the website structure. We deal with mu
    FILE SYSTEM  |  URL STRUCTURE
 ---------------------------------
  index.md       |   /            
- about.md       |   /about       
- contact.md     |   /contact     
- de/            |                
- ├── index.md   |   /de          
- ├── about.md   |   /de/about    
- └── contact.md |   /de/contact  
- it/            |                
- ├── index.md   |   /it          
- ├── about.md   |   /it/about    
- └── contact.md |   /it/contact  
+ fr/            |                
+ ├── index.md   |   /fr          
+ ar/            |                
+ ├── index.md   |   /ar          
 ```
 
 **Note**: *`permalink: pretty` needs to be set in `_config.yml` for the URL structure to be generated as above.*
@@ -37,11 +30,11 @@ Once we have our starting structure set up, we need to set some metadata in ever
 
 ```yaml
 ---
-# In /about.md:
+# In /index.md:
 layout: default
-title: About
+title: Home
 language: en
-handle: /about # same as in /de/about.md and /it/about.md
+handle: / # same as in /fr/ and /ar/
 ---
 ```
 
@@ -53,9 +46,9 @@ We put content that needs to present across the whole website (like the one you 
 ```yml
 # In _config.yml
 description: 
-  en: Plugin-free multilanguage Jekyll websites
-  de: Plugin-freie vielsprachige Jekyll Webseiten
-  it: Siti multilingue in Jekyll, senza plugin.
+  en: Multilanguage Jekyll Websites
+  fr: Sites Web multilingues Jekyll
+  ar: متعدد اللغات مواقع Jekyll
 ```
 
 We then use Liquid's bracket notation in the layout file to access the values in our hash. The `language` variable in the current page's frontmatter ensures that we grab the correct string from `_config.yml`:
@@ -72,13 +65,11 @@ You often need something more flexible for your average website though. You prob
 
 ```yaml
 # In /index.md
-see-on-github: See on GitHub
-tweet-this: Tweet this
-# In /de/index.md
-see-on-github: Auf GitHub sehen
-tweet-this: Twittern
-# In /it/index.md
-see-on-github: Vedi su GitHub
+title: Home
+# In /fr/index.md
+title: Accueil
+# In /ar/index.md
+title: الصفحة الرئيسية
 tweet-this: Twitta
 ```
 
@@ -91,6 +82,54 @@ Thanks to this method, we can keep our layout file nice and tidy:
 ```
 
 The system described above is incredibly flexible and will cover most of the use cases.
+
+### Section-specific content
+As we have created this as a single page template using sections. All the sections we have included inside a folder call `partials` inside `_includes` folder.
+
+Each liquid file is a section.
+
+```
+----------------------------------------------
+ LIQUID FILE [SECTIONS] |     FOLDER PATH
+----------------------------------------------
+ hero.liquid            |         
+ intro.liquid           |                
+ about.liquid           |  _includes/partials
+ analysis.liquid        |                     
+```
+
+Above all the liquid files will be called in the index.md file as shown below.
+
+```
+<!-- Section Hero  -->
+{% include partials/hero.liquid
+  background_image=site.data.section_landing.hero.image
+  video_webm=site.data.section_landing.hero.video_webm
+  video_mp4=site.data.section_landing.hero.video_mp4
+  background_image=false
+%}
+
+<!-- Section About  -->
+{% include partials/about.liquid %}
+
+<!-- Section Intro  -->
+{% include partials/intro.liquid %}
+
+<!-- Section Analysis  -->
+{% include partials/analysis.liquid %}
+```
+
+For all these liquid files, the content will be called through YML files inside `_data` folder. As we created liquid file for each section, we have created YML files for content for each section.
+
+```
+----------------------------------------------
+ YML CONTENT [SECTIONS]  |    FOLDER PATH
+----------------------------------------------
+ section_hero.yml        |         
+ section_intro.liquid    |                
+ section_about.liquid    |       _data/
+ section_analysis.liquid |                     
+```
 
 ### Navigation
 Dealing with a navigation menu is a simple matter. But, since our website has every page mirrored for every language, we need to add a conditional in the for loop to make sure that only the pages in the page's current language get picked up, otherwise Jekyll will happily include every page in our project without regard to the language.
@@ -114,8 +153,8 @@ The language switch is slightly trickier to implement. Let's get the easy part o
 <nav class="language-switcher">
   {% if page.name contains "index" %}
     <a href="{{ site.baseurl }}/">EN</a>
-    <a href="{{ site.baseurl | append: "/de" }}">DE</a>
-    <a href="{{ site.baseurl | append: "/it" }}">IT</a>
+    <a href="{{ site.baseurl | append: "/fr" }}">FR</a>
+    <a href="{{ site.baseurl | append: "/ar" }}">AR</a>
   {% endif %}
 </nav>
 ```
@@ -125,13 +164,13 @@ Since index pages sit at the first level of their directories, we just need to a
 ```liquid
 <nav class="language-switcher">
   {% if page.name contains "index" %}
-    <a href="{{ site.baseurl }}/">EN</a>
-    <a href="{{ site.baseurl | append: "/de" }}">DE</a>
-    <a href="{{ site.baseurl | append: "/it" }}">IT</a>
+    <a class="en" href="{{ site.baseurl }}/">EN</a>
+    <a class="fr" href="{{ site.baseurl | append: "/fr" }}">FR</a>
+    <a class="ar" href="{{ site.baseurl | append: "/ar" }}">AR</a>
   {% else %}
-    <a href="{{ site.baseurl | append: page.handle }}">EN</a>
-    <a href="{{ site.baseurl | append: "/de" | append: page.handle }}">DE</a>
-    <a href="{{ site.baseurl | append: "/it" | append: page.handle }}">IT</a>
+    <a class="en" href="{{ site.baseurl | append: page.handle }}">EN</a>
+    <a class="fr" href="{{ site.baseurl | append: "/fr" | append: page.handle }}">FR</a>
+    <a class="ar" href="{{ site.baseurl | append: "/ar" | append: page.handle }}">AR</a>
   {% endif %}
 </nav>
 ```

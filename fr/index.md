@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Home
+title: Accueil
 language: fr
 nav-order: 1
-see-on-github: Vedi su GitHub
 ---
 
 <!-- Section Hero  -->

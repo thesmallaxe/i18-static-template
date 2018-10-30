@@ -3,7 +3,6 @@ layout: default
 title: Home
 language: en
 nav-order: 1
-see-on-github: See on GitHub
 ---
 
 <!-- Section Hero  -->

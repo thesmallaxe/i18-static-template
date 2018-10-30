@@ -3,7 +3,6 @@ layout: default
 title: الصفحة الرئيسية
 language: ar
 nav-order: 1
-see-on-github: نرى على جيثب
 ---
 
 <!-- Section Hero  -->
