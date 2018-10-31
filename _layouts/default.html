@@ -32,10 +32,25 @@
             <h4 class="header__series-title">Jekyll Theme</h4>
           </div>
           <ol>
-            <li><a href="#section1">Landing</a></li>
+            <!-- <li><a href="#section1">Landing</a></li>
             <li><a href="#section2">Overview</a></li>
             <li><a href="#section3">Introduction</a></li>
-            <li><a href="#section4">Regional Analysis</a></li>
+            <li><a href="#section4">Regional Analysis</a></li> -->
+            {% if page.language == "en" %}
+              {% for item in site.nav.en %}
+                <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+            {% if page.language == "fr" %}
+              {% for item in site.nav.fr %}
+                <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+            {% if page.language == "ar" %}
+              {% for item in site.nav.ar %}
+                <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+              {% endfor %}
+            {% endif %}
           </ol>
         </nav>
       </div>

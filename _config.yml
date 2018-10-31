@@ -2,20 +2,56 @@ name:
   en: i18n static template
   fr: modèle statique i18n
   ar: i18n قالب ثابت 
+nav:
+  en:
+    - title: Landing
+      url: '#section1'
+
+    - title: Overview
+      url: '#section2'
+
+    - title: Introduction
+      url: '#section3'
+
+    - title: Regional Analysis
+      url: '#section4'
+  fr:
+    - title: Atterrissage
+      url: '#section1'
+
+    - title: Vue d'ensemble
+      url: '#section2'
+
+    - title: introduction
+      url: '#section3'
+
+    - title: Analyse régionale
+      url: '#section4'
+  ar:
+    - title: هبوط
+      url: '#section1'
+
+    - title: نظرة عامة
+      url: '#section2'
+
+    - title: المقدمة
+      url: '#section3'
+
+    - title: التحليل الإقليمي
+      url: '#section4'
 description: 
   en: Multilanguage Jekyll Websites
   fr: Sites Web multilingues Jekyll
   ar: متعدد اللغات مواقع Jekyll
 footer:
   en: A project by [smallaxetech]
-  de: Ein Projekt von [smallaxetech]
   fr: Un progetto di [smallaxetech]
   ar: مشروع مفتوح المصدر من قبل [smallaxetech]
 exclude: ""
 permalink: pretty
 repository: thesmallaxe/i18-static-template
-baseurl: "/i18-static-template"
-#baseurl: ""
+# baseurl: "/i18-static-template"
+baseurl: ""
 
 # Exclude files
 exclude: [

@@ -3,6 +3,14 @@
  */
 
 nav {
+  &.header__main-nav {
+    &:lang(ar) {
+      ol {
+        list-style: arabic-indic;
+      }
+    }
+  }
+
   &.language-switcher {
     position: fixed;
     right: 20px;

@@ -26,6 +26,7 @@ Headers
           &:focus,
           &.active {
             background-size: 100% 2px;
+            color: $color-white;
             opacity: 1;
             visibility: visible;
           }
